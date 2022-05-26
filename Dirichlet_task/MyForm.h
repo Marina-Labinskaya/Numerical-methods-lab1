@@ -1494,12 +1494,12 @@ private: System::Windows::Forms::Label^  label40;
         //    v2[n_2][j] = u2_test(y);
         //}
 
-        //// initialize u3(x), u4(x) for (n, m)
-        //for (int i = 0; i <= n; i++) {
-        //    double x = a + i * h;
-        //    v[i][0] = u3_test(x);
-        //    v[i][m] = u4_test(x);
-        //}
+        // initialize u3(x), u4(x) for (n, m)
+        for (int i = 0; i <= n; i++) {
+            double x = a + i * h;
+            v[i][0] = u3_test(x);
+            v[i][m] = u4_test(x);
+        }
 
         //// initialize u3(x), u4(x) for (2n, 2m)
         //for (int i = 0; i <= n_2; i++) {
