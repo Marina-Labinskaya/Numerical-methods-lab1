@@ -1500,7 +1500,6 @@ private: System::Windows::Forms::Label^  label40;
             v[i][0] = u3_test(x);
             v[i][m] = u4_test(x);
         }
-
         //// initialize u3(x), u4(x) for (2n, 2m)
         //for (int i = 0; i <= n_2; i++) {
         //    double x = a + i * h_2;
